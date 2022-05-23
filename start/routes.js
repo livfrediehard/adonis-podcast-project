@@ -13,7 +13,9 @@
 |
 */
 
-/** @type {typeof import('@adonisjs/framework/src/Route/Manager')} */
+/* @type {typeof import('@adonisjs/framework/src/Route/Manager')} */
+
 const Route = use('Route')
 
-Route.on('/').render('welcome')
+
+Route.get('/', 'TestController.index')
